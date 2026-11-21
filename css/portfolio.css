@@ -1,0 +1,238 @@
+/*
+ * Tema aksen situs - mengikuti aksen oranye template Colorlib.
+ * Aksen hijau (kelas pf-*) yang lama sudah dihapus.
+ */
+
+html {
+  scrollbar-color: #c7c7c7 #f5f5f5;
+  scrollbar-width: thin;
+}
+body::-webkit-scrollbar { width: 10px; }
+body::-webkit-scrollbar-track { background: #f5f5f5; }
+body::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border: 2px solid #f5f5f5;
+  border-radius: 8px;
+}
+body::-webkit-scrollbar-thumb:hover { background: #a8a8a8; }
+
+#colorlib-aside { scrollbar-color: #dddddd transparent; scrollbar-width: thin; }
+#colorlib-aside::-webkit-scrollbar { width: 8px; }
+#colorlib-aside::-webkit-scrollbar-track { background: transparent; }
+#colorlib-aside::-webkit-scrollbar-thumb { background: #dddddd; border-radius: 8px; }
+
+/* Tombol teks (hero, CTA, about) */
+.btn-custom {
+  color: #f05d23;
+  border-bottom: 2px solid #f05d23;
+  margin-right: 1.2rem;
+  font-weight: 500;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+  color: #c94a17;
+  border-bottom-color: #c94a17;
+  text-decoration: none;
+}
+.hero-wrap .text .btn-custom {
+  color: #f05d23;
+  border-bottom: 2px solid #f05d23;
+}
+.hero-wrap .text .btn-custom:hover,
+.hero-wrap .text .btn-custom:focus {
+  color: #c94a17;
+  border-bottom-color: #c94a17;
+}
+.hero-wrap .text .subheading { color: #8f8f8f; }
+
+/* Label kecil di atas judul section */
+.heading-section .subheading {
+  color: #9b9b9b;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Teks paragraf isi */
+.ftco-section p,
+.blog-entry .text p { color: #5b5b5b; }
+
+/* Baris angka ringkas di beranda */
+.home-stats .display-4 {
+  color: #111111;
+  font-weight: 700;
+}
+.home-stats span {
+  color: #8f8f8f;
+  font-size: 0.95rem;
+}
+
+/* Kartu proyek */
+.blog-entry .text h3 a { color: #111111; }
+.blog-entry .text h3 a:hover { color: #f05d23; }
+.blog-entry .category a {
+  color: #9b9b9b;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.blog-entry .category a:hover { color: #f05d23; }
+.blog-entry .img.img-2 { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.blog-entry:hover .img.img-2 {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px -24px rgba(0, 0, 0, 0.35);
+}
+
+/* Halaman kontak */
+.contact-section .heading-section p { margin-bottom: 0; }
+
+.contact-card {
+  display: flex;
+  gap: 8px;
+  height: 100%;
+  padding: 12px 14px;
+  background: #f7f7f7;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: #f6d3c4;
+  box-shadow: 0 16px 30px -22px rgba(0, 0, 0, 0.35);
+}
+.contact-card .icon {
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: #f05d23;
+  font-size: 18px;
+  line-height: 1;
+}
+.contact-card .contact-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #6f6f6f;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.contact-card p {
+  margin: 0;
+  color: #1a1a1a !important;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.contact-card p a { color: #1a1a1a; }
+.contact-card p a:hover { color: #f05d23; text-decoration: none; }
+
+.contact-form-wrap {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+}
+@media (max-width: 575.98px) {
+  .contact-form-wrap { padding: 1.35rem; }
+}
+
+.contact-section .form-group { margin-bottom: 1.1rem; }
+.contact-section .form-group label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #5b5b5b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.contact-section .form-group label span { color: #f05d23; }
+.contact-section .form-control {
+  height: 50px !important;
+  padding: 0.6rem 0.9rem;
+  background: #fff !important;
+  color: #1a1a1a !important;
+  font-size: 15px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-section textarea.form-control {
+  height: auto !important;
+  min-height: 150px;
+  resize: vertical;
+}
+.contact-section .form-control:focus,
+.contact-section .form-control:active {
+  border-color: #f05d23;
+  box-shadow: 0 0 0 3px rgba(240, 93, 35, 0.12) !important;
+}
+.contact-section .form-control::placeholder { color: #b3b3b3; }
+.contact-section .btn-primary { border-radius: 4px; font-weight: 600; }
+.contact-note { color: #6f6f6f; font-size: 0.82rem; }
+.contact-status { font-size: 0.9rem; }
+.contact-status.is-success { color: #2e7d32; }
+.contact-status.is-error { color: #c62828; }
+
+.contact-side { padding: 2rem; border-radius: 6px; }
+@media (max-width: 575.98px) {
+  .contact-side { padding: 1.35rem; }
+}
+.contact-side-list li {
+  margin-bottom: 0.5rem;
+  color: #5b5b5b;
+  font-size: 0.95rem;
+}
+.contact-side-list .ion-ios-checkmark-circle {
+  margin-right: 0.45rem;
+  color: #f05d23;
+}
+.contact-side-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+}
+.contact-side-links a {
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.contact-side-links a:hover { color: #f05d23; text-decoration: none; }
+.contact-side-links .icon { margin-right: 0.35rem; color: #f05d23; }
+
+/* Kontras & aksesibilitas halaman kontak */
+.contact-section .heading-section .subheading { color: #6f6f6f; }
+.contact-section .btn.btn-primary {
+  background: #c94a17;
+  border-color: #c94a17;
+  color: #fff;
+}
+.contact-section .btn.btn-primary:hover,
+.contact-section .btn.btn-primary:focus {
+  background: #b03d0c;
+  border-color: #b03d0c;
+  color: #fff;
+}
+.contact-side .btn-custom {
+  color: #c24412;
+  border-bottom-color: #c24412;
+}
+.contact-side .btn-custom:hover,
+.contact-side .btn-custom:focus { color: #a83c0d; border-bottom-color: #a83c0d; }
+.contact-side .btn-custom span { margin-left: 4px; }
+
+/* Teks footer tetap terbaca di latar gelap */
+.ftco-footer p { color: rgba(255, 255, 255, 0.8); }
+.ftco-footer p a { color: #f3a184; text-decoration: underline; }
+.ftco-footer p a:hover { color: #ffc4ad; }
+
+/* Footer lebih rapat dan tidak ada spasi berlebih di sidebar */
+#colorlib-aside .colorlib-footer { bottom: 70px; padding: 0 12px; }
+#colorlib-aside .colorlib-footer .aside-copyright {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.ftco-footer { padding-bottom: 4em; }
